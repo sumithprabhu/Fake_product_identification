@@ -75,34 +75,7 @@ const App = () => {
       console.error(err);
     }
   };
-    // try {
-    //   const { ethereum } = window;
-
-    //   if (!ethereum) {
-    //     alert("Get MetaMask!");
-    //     return;
-    //   }
-
-    //   const accounts = await ethereum.request({
-    //     method: "eth_requestAccounts",
-    //   });
-
-    //   console.log("Connected", accounts[0]);
-
-    //   setWallet("Connected");
-
-    //   setCurrentAccount(accounts[0]);
-    //   const provider = new ethers.providers.Web3Provider(ethereum);
-    //   const signer = provider.getSigner();
-    //   const contract = new ethers.Contract(
-    //     CONTRACT_ADDRESS,
-    //     AssetTracker,
-    //     signer
-    //   );
-    //   setContract(contract);
-    // } catch (error) {
-    //   console.log(error);
-    // }
+   
   
 
   useEffect(() => {
