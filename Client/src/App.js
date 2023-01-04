@@ -59,7 +59,7 @@ const App = () => {
       // When used for the first time, it prompts the user to connect their wallet
       await checkIfWalletIsConnected();
       setWalletConnected(true);
-      
+      setWallet("Wallet connected")
       
       
       const signer = await checkIfWalletIsConnected(true);
