@@ -56,7 +56,7 @@ const App = () => {
     
     try {
       // Get the provider from web3Modal, which in our case is MetaMask
-      // When used for the first time, it prompts the user to connect their wallet
+      
       await checkIfWalletIsConnected();
       setWalletConnected(true);
       setWallet("Wallet connected")
