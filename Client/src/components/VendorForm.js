@@ -335,26 +335,26 @@ const ReactTable = React.memo((props) => {
                         //   },
                         //   data: `{"personalizations":[{"to":[{"email":"${distributor[2]}"}],"subject":"Dispatch Item"}],"from":{"email":"rp589006@gmail.com"},"content":[{"type":"text/plain","value":"${body}"}]}`,
                         // };
-                        const options = {
-                          method: "POST",
-                          url: `https://api.mailslurp.com/sendEmail?apiKey=${process.env.REACT_APP_RAPID_API_KEY}`,
+                        // const options = {
+                        //   method: "POST",
+                        //   url: `https://api.mailslurp.com/sendEmail?apiKey=${process.env.REACT_APP_RAPID_API_KEY}`,
                           
-                          // data: `{"personalizations":[{"to":[{"email":"${distributor[2]}"}],"subject":"Dispatch Item"}],"from":{"email":"rp589006@gmail.com"},"content":[{"type":"text/plain","value":"${body}"}]}`,
-                          data: {
-                            senderId: "mufaddalshakir55@gmail.com",
-                            to: distributor[2],
-                            subject: "Dispatch Item",
-                            body: body,
-                          },
-                        };
-                        axios
-                          .request(options)
-                          .then(function (response) {
-                            console.log("Email Succesfully Send");
-                          })
-                          .catch(function (error) {
-                            console.error("Unable to send the mail");
-                          });
+                        //   // data: `{"personalizations":[{"to":[{"email":"${distributor[2]}"}],"subject":"Dispatch Item"}],"from":{"email":"rp589006@gmail.com"},"content":[{"type":"text/plain","value":"${body}"}]}`,
+                        //   data: {
+                        //     senderId: "mufaddalshakir55@gmail.com",
+                        //     to: distributor[2],
+                        //     subject: "Dispatch Item",
+                        //     body: body,
+                        //   },
+                        // };
+                        // axios
+                        //   .request(options)
+                        //   .then(function (response) {
+                        //     console.log("Email Succesfully Send");
+                        //   })
+                        //   .catch(function (error) {
+                        //     console.error("Unable to send the mail");
+                        //   });
                         setAssetMessage("Create");
                         setIsOpen(true);
                       } else {
