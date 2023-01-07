@@ -5,7 +5,7 @@ import QrScanner from 'qr-scanner'
 
 import "../css/Authenticate.css";
 const Authenticate = ({ account }) => {
-  const [auth, setAuth] = useState(false);
+ 
   const [message, setMessage] = useState("");
   const [file,setFile] = useState(null)
   const fileRef = useRef();
@@ -23,7 +23,7 @@ const Authenticate = ({ account }) => {
         
         if (res) {
           setMessage("Product is Authenticated ✅");
-          setAuth(true);
+          
         }
       }
     }
@@ -54,10 +54,8 @@ const Authenticate = ({ account }) => {
         <h2 style={{ position: "absolute", top: 20 }}>
           Scan QR code
         </h2>
-        <div style={{ position: "absolute", top: 80 }}>
-        {/* <button type="button" className="btn" onClick={handleChange} >
-          Scan QR code
-        </button> */}
+        <div style={{ position: "absolute", top: 80,left:680}}>
+        
         <input type="file"  onChange={handleChange} accept=".png, .jpg, .jpeg" />
         </div>
         <div
